@@ -1,0 +1,568 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  --about-navy: #082b49;
+  --about-blue: #0c4269;
+  --about-cyan: #16a6c4;
+  --about-light: #eaf7fa;
+  --about-text: #596c7b;
+
+  color: var(--about-navy);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.about-page * {
+  box-sizing: border-box;
+}
+
+.about-page a {
+  text-decoration: none;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.about-hero {
+  height: 360px;
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(5, 35, 59, 0.25),
+      rgba(5, 35, 59, 0.42)
+    ),
+    url("/assets/about-city.png") center 48% / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 35, 59, 0.22),
+      rgba(5, 35, 59, 0.08),
+      rgba(5, 35, 59, 0.22)
+    );
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+
+  animation: aboutHeroReveal 1s ease both;
+}
+
+.about-hero-line {
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #62d5e7;
+  margin: 0 auto 18px;
+}
+
+.about-hero-content h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 0;
+  color: white;
+
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-content p {
+  font-size: 14px;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+/* =========================================
+   INTRODUCTION CARD
+========================================= */
+
+.about-intro-section {
+  position: relative;
+  z-index: 3;
+
+  padding: 0 9% 75px;
+  margin-top: -75px;
+}
+
+.about-intro-card {
+  max-width: 1250px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 42px;
+
+  align-items: center;
+
+  padding: 48px;
+
+  background: #ffffff;
+  border-radius: 7px;
+
+  box-shadow:
+    0 15px 55px rgba(8, 43, 73, 0.11);
+
+  animation: aboutCardReveal 0.9s ease both;
+}
+
+/* =========================================
+   LEFT IMAGE
+========================================= */
+
+.about-intro-visual {
+  position: relative;
+  min-height: 390px;
+  padding-bottom: 30px;
+}
+
+.about-intro-image {
+  width: 100%;
+  height: 365px;
+
+  border-radius: 4px;
+
+  background:
+    linear-gradient(
+      rgba(8, 43, 73, 0.05),
+      rgba(8, 43, 73, 0.05)
+    ),
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=85&w=1200")
+    center / cover no-repeat;
+
+  box-shadow:
+    0 12px 30px rgba(8, 43, 73, 0.13);
+
+  transition: transform 0.5s ease;
+}
+
+.about-intro-visual:hover .about-intro-image {
+  transform: translateY(-5px);
+}
+
+/* IMAGE CAPTION */
+
+.about-image-caption {
+  position: absolute;
+
+  right: -15px;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 17px 22px;
+
+  background: white;
+
+  box-shadow:
+    0 8px 30px rgba(8, 43, 73, 0.13);
+
+  border-left: 3px solid var(--about-cyan);
+}
+
+.about-caption-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--about-cyan);
+  background: var(--about-light);
+}
+
+.about-image-caption strong {
+  display: block;
+  font-size: 13px;
+  color: var(--about-navy);
+}
+
+.about-image-caption > div > span {
+  display: block;
+  font-size: 10px;
+  color: var(--about-text);
+  margin-top: 4px;
+}
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.about-intro-content {
+  padding: 5px 0;
+}
+
+.about-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--about-cyan);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  margin-bottom: 17px;
+}
+
+.about-kicker span {
+  width: 25px;
+  height: 2px;
+  background: var(--about-cyan);
+}
+
+.about-intro-content h2 {
+  font-size: clamp(30px, 3vw, 39px);
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+
+  color: var(--about-navy);
+
+  margin: 0 0 22px;
+}
+
+.about-intro-content h2 span {
+  color: var(--about-cyan);
+}
+
+.about-intro-content > p:not(.about-kicker) {
+  color: var(--about-text);
+
+  font-size: 13px;
+  line-height: 1.85;
+
+  margin: 0 0 13px;
+}
+
+.about-intro-content > p strong {
+  color: var(--about-navy);
+}
+
+/* =========================================
+   COMPANY BELIEF
+========================================= */
+
+.about-belief {
+  display: flex;
+  align-items: stretch;
+  gap: 13px;
+
+  margin: 22px 0 25px;
+}
+
+.belief-line {
+  min-width: 3px;
+  background: var(--about-cyan);
+  border-radius: 5px;
+}
+
+.about-belief p {
+  color: var(--about-blue);
+
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+
+.about-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  padding: 14px 25px;
+
+  background: var(--about-navy);
+  color: white;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.about-contact-button:hover {
+  background: var(--about-cyan);
+  color: white;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(22, 166, 196, 0.25);
+}
+
+.about-contact-button svg {
+  transition: transform 0.3s ease;
+}
+
+.about-contact-button:hover svg {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   VALUES STRIP
+========================================= */
+
+.about-values-strip {
+  max-width: 1250px;
+  margin: 0 auto 85px;
+
+  padding: 30px 35px;
+
+  background: #f3f9fa;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+
+  align-items: center;
+  gap: 25px;
+
+  border-radius: 6px;
+}
+
+.about-value-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-value-icon {
+  min-width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: white;
+  color: var(--about-cyan);
+
+  box-shadow:
+    0 4px 15px rgba(8, 43, 73, 0.07);
+
+  transition: 0.3s ease;
+}
+
+.about-value-item:hover .about-value-icon {
+  background: var(--about-navy);
+  color: white;
+  transform: rotate(-8deg);
+}
+
+.about-value-item h3 {
+  font-size: 13px;
+  color: var(--about-navy);
+  margin: 0 0 5px;
+}
+
+.about-value-item p {
+  font-size: 11px;
+  color: var(--about-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.about-value-divider {
+  width: 1px;
+  height: 45px;
+  background: #d8e7eb;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes aboutHeroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aboutCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+  .about-intro-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .about-intro-card {
+    gap: 30px;
+    padding: 35px;
+  }
+
+  .about-values-strip {
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-hero {
+    height: 310px;
+  }
+
+  .about-intro-section {
+    margin-top: -45px;
+  }
+
+  .about-intro-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .about-intro-visual {
+    min-height: 330px;
+  }
+
+  .about-intro-image {
+    height: 310px;
+  }
+
+  .about-values-strip {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 28px;
+  }
+
+  .about-value-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-hero {
+    height: 260px;
+    background-position: center;
+  }
+
+  .about-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .about-hero-content p {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .about-intro-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .about-intro-card {
+    padding: 23px;
+    gap: 35px;
+  }
+
+  .about-intro-visual {
+    min-height: 260px;
+  }
+
+  .about-intro-image {
+    height: 245px;
+  }
+
+  .about-image-caption {
+    right: -8px;
+    padding: 12px 15px;
+  }
+
+  .about-intro-content h2 {
+    font-size: 30px;
+  }
+
+  .about-intro-content > p:not(.about-kicker) {
+    font-size: 12px;
+  }
+
+  .about-values-strip {
+    margin-bottom: 50px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-page *,
+  .about-page *::before,
+  .about-page *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+}
+
+/* Active navigation link */
+.nav-links a.active {
+  color: #078eae;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: #078eae;
+}

@@ -12,6 +12,8 @@ import {
   Handshake,
   ArrowRight,
   CheckCircle2,
+  HardHat,
+  House,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -22,43 +24,55 @@ const industries = [
     name: "NBFC",
     icon: Building2,
     description:
-      "Supporting non-banking financial companies in connecting with professionals suited to their business requirements.",
+      "We help Non-Banking Financial Companies identify skilled professionals for lending operations, credit management, customer relationships, financial analysis, and business development roles. Our focus is on connecting organizations with talent that supports their operational efficiency and growth.",
   },
   {
     name: "Banking",
     icon: Landmark,
     description:
-      "Helping banking organizations identify and connect with talent aligned with their operational and business needs.",
+      "We support banking institutions in finding professionals across retail banking, relationship management, branch operations, customer service, sales, and financial services. We focus on matching candidates' experience and capabilities with the specific requirements of banking organizations.",
   },
   {
     name: "Insurance",
     icon: ShieldCheck,
     description:
-      "Connecting insurance organizations with individuals who can contribute to their teams and business goals.",
+      "We assist insurance organizations in connecting with suitable talent for insurance sales, policy servicing, claims support, customer relationship management, and operational roles. Our recruitment approach focuses on identifying individuals who can contribute to service quality and business objectives.",
   },
   {
     name: "Finance",
     icon: Wallet,
     description:
-      "Supporting finance-sector organizations in finding suitable professionals for their evolving requirements.",
+      "We help finance-sector organizations find professionals for financial operations, accounting, financial planning, analysis, sales, and customer support. We aim to connect businesses with individuals whose professional skills and experience align with their evolving financial requirements.",
   },
   {
     name: "Asset Management",
     icon: ChartNoAxesCombined,
     description:
-      "Helping asset management organizations connect with professionals whose capabilities match their requirements.",
+      "We support asset management companies in identifying professionals for investment operations, portfolio support, financial research, client servicing, and relationship management. Our approach emphasizes finding candidates with relevant knowledge and capabilities to support organizational goals.",
   },
   {
     name: "Broking",
     icon: TrendingUp,
     description:
-      "Connecting broking businesses with talent suited to their organizational and operational needs.",
+      "We help broking firms connect with professionals across equity operations, trading support, sales, dealer roles, customer relationships, and business development. We understand the importance of industry knowledge, communication, and operational skills in this fast-moving sector.",
   },
   {
     name: "BPO",
     icon: Headset,
     description:
-      "Supporting BPO organizations with recruitment solutions aligned with their workforce requirements.",
+      "We provide recruitment support to Business Process Outsourcing organizations looking for professionals in customer support, technical assistance, voice and non-voice processes, operations, and team coordination. We focus on helping businesses meet their workforce requirements efficiently.",
+  },
+  {
+    name: "Construction",
+    icon: HardHat,
+    description:
+      "We support construction companies in finding professionals for project coordination, site supervision, civil engineering, safety management, quality control, and construction operations. We aim to connect organizations with capable individuals who can contribute to project execution and infrastructure development.",
+  },
+  {
+    name: "Real Estate",
+    icon: House,
+    description:
+      "We help real estate organizations identify suitable professionals for property sales, business development, customer relationships, property management, site coordination, and operations. Our focus is on connecting businesses with individuals who understand customer needs and the demands of the real estate industry.",
   },
 ];
 
@@ -103,8 +117,6 @@ const strengths = [
 function Services() {
   return (
     <div className="services-page">
-      
-
       <main>
         {/* HERO */}
         <section className="services-hero">
@@ -117,7 +129,7 @@ function Services() {
             <h1>
               Recruitment Solutions
               <br />
-              <span>Across Financial Services.</span>
+              <span>Across Multiple Industries.</span>
             </h1>
 
             <p>
@@ -158,8 +170,9 @@ function Services() {
 
             <p>
               Every industry has different workforce requirements. We
-              approach recruitment with an understanding of these differences
-              and focus on connecting organizations with suitable talent.
+              understand these differences and focus on connecting
+              organizations with professionals whose skills, experience,
+              and capabilities match their business needs.
             </p>
           </div>
 
@@ -178,6 +191,7 @@ function Services() {
                   </div>
 
                   <h3>{industry.name}</h3>
+
                   <p>{industry.description}</p>
 
                   <div className="services-card-bottom">
@@ -286,9 +300,9 @@ function Services() {
           </div>
 
           <Link to="/contact" className="services-button services-button-light">
-                CONTACT OUR TEAM
-                <ArrowRight size={17} />
-              </Link>
+            CONTACT OUR TEAM
+            <ArrowRight size={17} />
+          </Link>
         </section>
       </main>
 

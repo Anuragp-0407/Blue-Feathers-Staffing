@@ -5,10 +5,7 @@ import "./About.css";
 function About() {
   return (
     <div className="about-page">
-
-
       <main>
-
         {/* ABOUT HERO */}
 
         <section className="about-hero">
@@ -19,22 +16,17 @@ function About() {
 
             <h1>ABOUT US</h1>
 
-            <p>
-              Connecting People. Creating Opportunities.
-            </p>
+            <p>Connecting People. Creating Opportunities.</p>
           </div>
         </section>
 
         {/* COMPANY INTRODUCTION */}
 
         <section className="about-intro-section">
-
           <div className="about-intro-card">
-
             {/* LEFT IMAGE */}
 
             <div className="about-intro-visual">
-
               <div className="about-intro-image"></div>
 
               <div className="about-image-caption">
@@ -47,13 +39,11 @@ function About() {
                   <span>Opportunities for Everyone</span>
                 </div>
               </div>
-
             </div>
 
             {/* RIGHT CONTENT */}
 
             <div className="about-intro-content">
-
               <p className="about-kicker">
                 <span></span>
                 WHO WE ARE
@@ -66,35 +56,30 @@ function About() {
               </h2>
 
               <p>
-                Established in <strong>2019</strong>, Blue Feathers
-                Staffing Solutions was founded with a vision to connect
-                people with meaningful employment opportunities and help
-                businesses find the talent they need to grow.
+                Founded in <strong>2019</strong>, BLUE FEATHERS Staffing
+                Solutions began its journey during a time of unprecedented
+                uncertainty, when businesses were facing significant challenges
+                and countless individuals were struggling to find employment. We
+                witnessed many talented people searching for meaningful job
+                opportunities, while others sought flexible work-from-home
+                options to support their families and achieve financial
+                independence. This inspired us to establish our recruitment and
+                placement business with a clear vision: connecting the right
+                talent with the right opportunities.
               </p>
 
               <p>
-                Our journey is driven by the belief that every individual
-                deserves an opportunity to showcase their abilities,
-                achieve financial independence, and build a better future.
-                During times of unprecedented uncertainty, when businesses
-                faced challenges and countless individuals struggled to
-                find employment, the importance of meaningful recruitment
-                and accessible work opportunities became even more evident.
+                What started as an initiative to help individuals find
+                employment has evolved into a purpose-driven mission to empower
+                job seekers, support businesses in finding suitable talent, and
+                build meaningful connections between employers and candidates.
               </p>
 
               <p>
-                We recognized the growing need to bridge the gap between
-                job seekers and employers, including individuals looking
-                for flexible work-from-home opportunities to support their
-                families and professional aspirations.
-              </p>
-
-              <p>
-                What began with a commitment to connecting people with
-                opportunities has grown into a purpose-driven approach
-                to recruitment. We strive to understand the needs of
-                businesses while recognizing the skills, potential,
-                and aspirations of individuals.
+                At BLUE FEATHERS Staffing Solutions, we are committed
+                to creating opportunities that help individuals grow
+                professionally while enabling businesses to build stronger and
+                more capable teams.
               </p>
 
               <div className="about-belief">
@@ -110,17 +95,13 @@ function About() {
                 CONTACT US
                 <ArrowRight size={17} />
               </Link>
-
             </div>
-
           </div>
-
         </section>
 
         {/* COMPANY VALUES STRIP */}
 
         <section className="about-values-strip">
-
           <div className="about-value-item">
             <div className="about-value-icon">
               <Users size={25} />
@@ -157,15 +138,12 @@ function About() {
               <p>Building lasting relationships.</p>
             </div>
           </div>
-
         </section>
-
       </main>
 
       {/* FOOTER */}
 
       <footer className="services-footer">
-
         <Link to="/" className="services-footer-brand">
           BLUE FEATHERS
           <span>Staffing Solutions</span>
@@ -174,12 +152,10 @@ function About() {
         <p>Connecting people with opportunities.</p>
 
         <span>
-          © {new Date().getFullYear()} Blue Feathers Staffing Solutions.
-          All rights reserved.
+          © {new Date().getFullYear()} Blue Feathers Staffing Solutions. All
+          rights reserved.
         </span>
-
       </footer>
-
     </div>
   );
 }

@@ -16,7 +16,7 @@ import {
 import "./Contact.css";
 
 // Replace this with your actual Web3Forms access key
-const WEB3FORMS_ACCESS_KEY =import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ;
+const WEB3FORMS_ACCESS_KEY =import.meta.env.WEB3FORMS_ACCESS_KEY ;
 
 const Contact = () => {
   const [searchParams] = useSearchParams();

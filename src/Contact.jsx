@@ -252,7 +252,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/blue-feather-staffing-solutions-llp-7bb286361"
+                href="https://www.linkedin.com/in/blue-feather-staffing-solutions-17292844a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-info-item"
@@ -510,7 +510,7 @@ const Contact = () => {
           </p>
 
           <a
-            href="https://www.linkedin.com/in/blue-feather-staffing-solutions-llp-7bb286361"
+            href="https://www.linkedin.com/in/blue-feather-staffing-solutions-17292844a"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-bottom-btn"

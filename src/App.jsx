@@ -167,7 +167,7 @@ function HomePage() {
             <div className="about-band-mark">
               <img
                 src="/assets/founders.jpg"
-                alt="Founders of Blue Feathers Staffing Solutions"
+                alt="Founders of Blue Feather Staffing Solutions LLP"
               />
             </div>
 
@@ -190,7 +190,7 @@ function HomePage() {
             </h2>
 
             <p className="about-description">
-              At BLUE FEATHERS Staffing Solutions, <strong>Rachna</strong> and{" "}
+              At BLUE FEATHER Staffing Solutions LLP, <strong>Rachna</strong> and{" "}
               <strong>Divya</strong> believe that the right people are the
               foundation of every successful organization. With a shared vision
               of connecting businesses with the right talent, they are committed
@@ -342,8 +342,8 @@ function HomePage() {
 
       <footer className="site-footer">
         <Link to="/" className="footer-brand">
-          BLUE FEATHERS
-          <span>Staffing Solutions</span>
+          BLUE FEATHER
+          <span>Staffing Solutions LLP</span>
         </Link>
 
         <p>Connecting people with opportunities.</p>
@@ -356,7 +356,7 @@ function HomePage() {
         </div>
 
         <div className="copyright">
-          © {new Date().getFullYear()} Blue Feathers Staffing Solutions.
+          © {new Date().getFullYear()} Blue Feather Staffing Solutions LLP.
           <br />
           All rights reserved.
         </div>

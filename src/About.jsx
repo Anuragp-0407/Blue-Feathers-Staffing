@@ -56,8 +56,8 @@ function About() {
               </h2>
 
               <p>
-                Founded in <strong>2019</strong>, BLUE FEATHERS Staffing
-                Solutions began its journey during a time of unprecedented
+                Founded in <strong>2019</strong>, BLUE FEATHER Staffing
+                Solutions LLP began its journey during a time of unprecedented
                 uncertainty, when businesses were facing significant challenges
                 and countless individuals were struggling to find employment. We
                 witnessed many talented people searching for meaningful job
@@ -76,7 +76,7 @@ function About() {
               </p>
 
               <p>
-                At BLUE FEATHERS Staffing Solutions, we are committed
+                At BLUE FEATHER Staffing Solutions LLP, we are committed
                 to creating opportunities that help individuals grow
                 professionally while enabling businesses to build stronger and
                 more capable teams.
@@ -145,14 +145,14 @@ function About() {
 
       <footer className="services-footer">
         <Link to="/" className="services-footer-brand">
-          BLUE FEATHERS
-          <span>Staffing Solutions</span>
+          BLUE FEATHER
+          <span>Staffing Solutions LLP</span>
         </Link>
 
         <p>Connecting people with opportunities.</p>
 
         <span>
-          © {new Date().getFullYear()} Blue Feathers Staffing Solutions. All
+          © {new Date().getFullYear()} Blue Feather Staffing Solutions LLP. All
           rights reserved.
         </span>
       </footer>

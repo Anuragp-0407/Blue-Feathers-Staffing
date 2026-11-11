@@ -249,7 +249,7 @@ function Services() {
           <div className="services-why-content">
             <p className="services-kicker">
               <span />
-              WHY BLUE FEATHERS
+              WHY BLUE FEATHER
             </p>
 
             <h2>
@@ -309,14 +309,14 @@ function Services() {
       {/* FOOTER */}
       <footer className="services-footer">
         <Link to="/" className="services-footer-brand">
-          BLUE FEATHERS
-          <span>Staffing Solutions</span>
+          BLUE FEATHER
+          <span>Staffing Solutions LLP</span>
         </Link>
 
         <p>Connecting people with opportunities.</p>
 
         <span>
-          © {new Date().getFullYear()} Blue Feathers Staffing Solutions. All
+          © {new Date().getFullYear()} Blue Feather Staffing Solutions LLP. All
           rights reserved.
         </span>
       </footer>

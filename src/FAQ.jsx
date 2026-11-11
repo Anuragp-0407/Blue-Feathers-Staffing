@@ -72,9 +72,9 @@ const faqData = {
         "Successful recruitment starts with understanding the role, defining the ideal candidate profile, using appropriate sourcing methods, conducting structured interviews, and evaluating candidates fairly.",
     },
     {
-      question: "How can I discuss recruitment requirements with Blue Feathers?",
+      question: "How can I discuss recruitment requirements with Blue Feather?",
       answer:
-        "You can contact the Blue Feathers team through the Contact Us section of the website and share your organization's hiring requirements. The team can then discuss your recruitment needs with you.",
+        "You can contact the Blue Feather team through the Contact Us section of the website and share your organization's hiring requirements. The team can then discuss your recruitment needs with you.",
     },
   ],
 };

@@ -108,7 +108,7 @@ const Contact = () => {
         phone: formData.phone,
         subject: formData.subject,
         message: formData.message,
-        from_name: "Blue Feathers Staffing Solutions Website",
+        from_name: "Blue Feather Staffing Solutions LLP Website",
       };
 
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -501,7 +501,7 @@ const Contact = () => {
       {/* BOTTOM CTA */}
       <section className="contact-bottom-cta">
         <div className="contact-bottom-cta-content">
-          <span>BLUE FEATHERS STAFFING SOLUTIONS</span>
+          <span>BLUE FEATHERS STAFFING SOLUTIONS LLP</span>
 
           <h2>Every Connection Starts With a Conversation.</h2>
 
@@ -543,7 +543,7 @@ const Contact = () => {
             <h2 id="contact-success-title">Message Sent Successfully!</h2>
 
             <p id="contact-success-description">
-              Thank you for contacting Blue Feathers Staffing Solutions.
+              Thank you for contacting Blue Feather Staffing Solutions LLP.
               We've received your message and will get back to you soon.
             </p>
 
